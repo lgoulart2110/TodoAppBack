@@ -40,15 +40,4 @@ namespace TodoApp.Application.Models
         public void AddError(Notification error) => _errors.Add(error);
         public void AddErrors(IEnumerable<Notification> errors) => _errors.AddRange(errors);
     }
-
-    public class Result : Result<dynamic>
-    {
-        public Result() : base() { }
-
-        public Result(dynamic data) : base() => Data = data;
-
-        public Result(HttpStatusCode statusCode, string code, string message) : base(statusCode, code, message) { }
-
-        public Result(HttpStatusCode statusCode, IEnumerable<Notification> errors) : base(statusCode, errors) { }
-    }
 }

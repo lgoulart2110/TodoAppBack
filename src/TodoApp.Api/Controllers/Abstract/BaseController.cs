@@ -64,12 +64,6 @@ namespace TodoApp.Api.Controllers.Abstract
             return result;
         }
 
-        protected Result GetResult(Result result)
-        {
-            ConfigureResult(result);
-            return result;
-        }
-
         private void ConfigureResult<T>(Result<T> result)
         {
             var notificationStatus = _notificationService.Notifications?.LastOrDefault()?.StatusCode ?? result.StatusCode;
