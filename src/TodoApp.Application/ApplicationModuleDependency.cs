@@ -20,6 +20,7 @@ namespace TodoApp.Application
                 fv.RegisterValidatorsFromAssemblyContaining<TodoValidator>();
             });
             services.AddScoped<ITodoService, TodoService>();
+            services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<INotificationService, NotificationService>();
         }
 

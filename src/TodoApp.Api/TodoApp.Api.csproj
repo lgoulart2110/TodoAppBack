@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TodoApp.Application\TodoApp.Application.csproj" />
+    <ProjectReference Include="..\TodoApp.Hangfire\TodoApp.Hangfire.csproj" />
     <ProjectReference Include="..\TodoApp.Infra.Database\TodoApp.Infra.Database.csproj" />
   </ItemGroup>
 

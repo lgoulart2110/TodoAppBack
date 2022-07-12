@@ -15,15 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Api", "src\TodoApp.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D20A6157-90C7-44A7-A3FE-B8A2A39B49DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Application", "src\TodoApp.Application\TodoApp.Application.csproj", "{2861CF03-E023-4AC9-9430-B45A106DAF60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Application", "src\TodoApp.Application\TodoApp.Application.csproj", "{2861CF03-E023-4AC9-9430-B45A106DAF60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Domain", "src\TodoApp.Domain\TodoApp.Domain.csproj", "{E97E7B29-193E-48E3-9499-CF576EE7C205}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Domain", "src\TodoApp.Domain\TodoApp.Domain.csproj", "{E97E7B29-193E-48E3-9499-CF576EE7C205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Infra.Database", "src\TodoApp.Infra.Database\TodoApp.Infra.Database.csproj", "{583BA7C6-6E35-4646-9FF7-80F70FCC8015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Infra.Database", "src\TodoApp.Infra.Database\TodoApp.Infra.Database.csproj", "{583BA7C6-6E35-4646-9FF7-80F70FCC8015}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{75F8F6CF-B7AF-4E0E-BF01-D13382E43110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Api.Tests", "tests\TodoApp.Api.Tests\TodoApp.Api.Tests.csproj", "{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApp.Api.Tests", "tests\TodoApp.Api.Tests\TodoApp.Api.Tests.csproj", "{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Hangfire", "src\TodoApp.Hangfire\TodoApp.Hangfire.csproj", "{3A30FECB-1428-4796-8F4D-08B190BEF91A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A30FECB-1428-4796-8F4D-08B190BEF91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A30FECB-1428-4796-8F4D-08B190BEF91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A30FECB-1428-4796-8F4D-08B190BEF91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A30FECB-1428-4796-8F4D-08B190BEF91A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{E97E7B29-193E-48E3-9499-CF576EE7C205} = {D20A6157-90C7-44A7-A3FE-B8A2A39B49DD}
 		{583BA7C6-6E35-4646-9FF7-80F70FCC8015} = {3F401246-B8C3-46FB-9F53-99D1BCE0A4E7}
 		{A91F4DD4-C24A-4657-ACD5-FF4D908F71B6} = {75F8F6CF-B7AF-4E0E-BF01-D13382E43110}
+		{3A30FECB-1428-4796-8F4D-08B190BEF91A} = {3F401246-B8C3-46FB-9F53-99D1BCE0A4E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA876CC-FF2E-4E75-8DFE-65C77B57B692}

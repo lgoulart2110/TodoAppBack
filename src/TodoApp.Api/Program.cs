@@ -1,5 +1,6 @@
 using TodoApp.Application;
 using TodoApp.Infra.Database;
+using TodoApp.Hangfire;
 
 namespace TodoApp.Api
 {
@@ -21,6 +22,8 @@ namespace TodoApp.Api
             builder.Services.AddDatabaseModule(configuration);
             builder.Services.AddApplicationModule();
 
+            builder.Services.AddHangfireServiceModule(configuration);
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -34,6 +37,7 @@ namespace TodoApp.Api
 
             app.UseAuthorization();
 
+            app.AddHangfireAppModule();
 
             app.MapControllers();
 

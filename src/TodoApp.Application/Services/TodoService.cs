@@ -17,8 +17,9 @@ namespace TodoApp.Application.Services
             IUnitOfWork unitOfWork, 
             IValidator<TodoModel> validator, 
             ITodoRepository repository, 
-            INotificationService notificationService
-            ) : base(mapper, unitOfWork, validator, repository, notificationService)
+            INotificationService notificationService,
+            IEmailService emailService
+            ) : base(mapper, unitOfWork, validator, repository, notificationService, emailService)
         {
         }
     }
